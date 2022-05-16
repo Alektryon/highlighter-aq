@@ -1,0 +1,177 @@
+body {
+	color: white;
+	font-family: "Bookman Old Style", Arial;
+	background-color: RGB(34, 34, 34);
+}
+
+a {
+	color: inherit !important;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.MainTable {
+	table-layout: fixed;
+}
+
+.High_Text {
+	color: RGB(200, 255, 255);
+	font-size: 100%;
+	word-wrap: break-word;
+	vertical-align: text-bottom;
+	text-align: bottom;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	min-height: 84px;
+	max-height: 84px;
+	min-width: 600px;
+	max-width: 750px;
+}
+
+.GemBox_Header {
+	color: orange;
+	font-weight: 50%;
+	text-align: center;
+	padding: 5px;
+}
+
+.GemTable {
+	background-color: RGB(19, 19, 19);
+}
+
+.td_name {
+	padding-bottom: 1px;
+	padding-top: 2px;
+	width: 160px;
+	text-align: center;
+}
+
+.td_number {
+	font-weight: bold;
+	font-size: 175%;
+	padding-top: 0px;
+	padding-bottom: 8px;
+	width: 160px;
+	text-align: center;
+}
+.td_number a {
+	text-decoration: inherit !important;
+}
+
+table .CheckHead {
+	padding-top: 10px;
+	font-weight: 25%;
+	text-decoration: underline;
+	text-align: left;
+}
+.CheckTable {
+	text-align: top;
+}
+
+.GemBreak {
+	background-color: RGB(19, 19, 19);
+}
+.CipherLabel {
+	color: orange;
+	font-weight: 100%;
+	padding-right: 10px;
+}
+
+
+.Reduced{
+	color: RGB(68, 114, 196);
+}
+.Reduced:hover {
+	color: RGB(0, 130, 256);
+	text-decoration: underline;
+}
+
+.S_Exception{
+	color: RGB(142, 169, 219);
+}
+.S_Exception:hover{
+	color: RGB(142, 200, 255);
+	text-decoration: underline;
+}
+
+.KV_Exception{
+	color: RGB(142, 169, 219);
+}
+.KV_Exception:hover{
+	color: RGB(142, 200, 255);
+	text-decoration: underline;
+}
+
+.KSV_Exception{
+	color: RGB(0, 176, 240);
+}
+.KSV_Exception:hover{
+	color: RGB(0, 220, 200);
+	text-decoration: underline;
+}
+
+.Ordinal{
+	color: RGB(0, 153, 0);
+}
+.Ordinal:hover{
+	color: RGB(0, 200, 0);
+	text-decoration: underline;
+}
+
+.Sumerian{
+	color: RGB(169, 208, 142);
+}
+.Sumerian:hover{
+	color: RGB(180, 235, 142);
+	text-decoration: underline;
+}
+
+.Francis_Bacon{
+	color: RGB(146, 208, 80);
+}
+.Francis_Bacon:hover{
+	color: RGB(146, 235, 105);
+	text-decoration: underline;
+}
+
+.Alphanumeric{
+	color: RGB(191, 195, 127);
+}
+.Alphanumeric:hover{
+	color: RGB(216, 216, 171);
+	text-decoration: underline;
+}
+
+.Jewish{
+	color: RGB(153, 102, 255);
+}
+.Jewish:hover{
+	color: RGB(170, 135, 255);
+	text-decoration: underline;
+}
+
+.English{
+	color: RGB(255, 255, 0);
+}
+.English:hover{
+	color: RGB(220, 220, 155);
+	text-decoration: underline;
+}
+
+.Septenary{
+	color: RGB(255, 153, 0);
+}
+.Septenary:hover{
+	color: RGB(255, 200, 0);
+	text-decoration: underline;
+}
+
+.Reverse_Ordinal{
+	color: RGB(198, 89, 17);
+}
+.Reverse_Ordinal:hover{
+	color: RGB(220, 120, 60);
+	text-decoration: underline;
+}

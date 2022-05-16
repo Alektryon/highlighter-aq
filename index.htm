@@ -1,0 +1,333 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Gematrinator.com - Text Highlight Tool</title>
+
+<script src="Text%20Highlighter_ficheiros/TextHighlighter.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="Text%20Highlighter_ficheiros/js.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-126828913-1');
+    </script>
+
+    
+	<link rel="stylesheet" type="text/css" href="Text%20Highlighter_ficheiros/TextHighlighter.css">
+	<style>
+body {
+	background-color: RGB(34, 34, 34);
+}
+#HeaderTable {
+	width: 700px;
+	background-color: RGB(34, 34, 34);
+	margin-left: auto;
+	margin-right: auto;
+	font: "Georgia", Arial;
+	text-align: center;
+}
+#HeaderTable td {
+	text-align: center;
+}
+
+#TopLogo {
+    width: 600px;
+    height: 185px;
+}
+
+.CatLink {
+	display: inline;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+.CatLink a {color: RGB(230, 230, 23);}
+.CatLink a:visited {color: RGB(230, 230, 23);}
+.CatLink a:hover {color: RGB(255, 255, 153);	cursor: pointer;}
+
+.dropbtn {
+    background-color: RGB(34, 34, 34);
+    color: RGB(140, 250, 243);
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropbtn a {
+	color: RGB(0, 0, 23);
+}
+
+.dropdown {
+    padding-right: 25px;
+    padding-left: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background: #000428;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, rgb(0, 0, 16), rgb(0, 0, 43));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgb(0, 0, 16), rgb(0, 0, 43)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dropdown-content a {
+	font-size: 115%;
+    color: RGB(204, 254, 254);
+	background: -webkit-linear-gradient(0deg, rgba(0,0,34,1) 0, rgba(3,19,79,1) 49%, rgba(9,56,158,1) 100%);
+	background: -moz-linear-gradient(90deg, rgba(0,0,34,1) 0, rgba(3,19,79,1) 49%, rgba(9,56,158,1) 100%);
+	background: linear-gradient(90deg, rgba(0,0,34,1) 0, rgba(3,19,79,1) 49%, rgba(9,56,158,1) 100%);
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	color: RGB(204, 254, 254);
+    background: #232526;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, rgb(0, 20, 47), rgb(0, 40, 88));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgb(0, 20, 47), rgb(0, 40, 88)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #243B55, #141E30, #243B55);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #243B55, #141E30, #243B55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Blog a {
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Announcement a {
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Video a {
+	color: RGB(0,0,0);
+	background: #ee0979;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Podcast a {
+	color: RGB(0,0,0);
+	background: #fe8c00;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Tweet a {
+	color: RGB(0,0,0);
+	background: #06beb6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Twitch a {
+	background: #6441A5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Image a {
+	background: #0f0c29;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.NumProps a {
+	color: RGB(137, 197, 101);
+	background: -webkit-linear-gradient(0deg, rgba(76,76,76,1) 0, rgba(63,63,63,1) 52%, rgba(48,48,48,1) 100%);
+  	background: -moz-linear-gradient(90deg, rgba(76,76,76,1) 0, rgba(63,63,63,1) 52%, rgba(48,48,48,1) 100%);
+  	background: linear-gradient(90deg, rgba(76,76,76,1) 0, rgba(63,63,63,1) 52%, rgba(48,48,48,1) 100%);
+}
+#pcast {
+	vertical-align: middle;
+}
+
+</style>
+
+<script>
+var arrC1 = []; arrC2 = []; arrC3 = []
+var impArr = []
+
+function Open_NumProps() {
+	window.open("http://www.gematrinator.com/calculator/numberProperties.php?Number=3", "Properties of 3", "height=480,width=750")
+}
+function AudioDrop() {
+	var hStr = '<iframe src="https://mixlr.com/users/6588095/embed?color=1f0cff" width="100%" height="180px" scrolling="no" frameborder="no" marginheight="0" marginwidth="0"></iframe><a href="http://mixlr.com/gematrinator/showreel"><font color="#00ffff" style="float: left;">Gematrinator Showreel</font></a><a href="https://www.youtube.com/watch?v=ithYkLxL8P4"><font color="#00ffff">Watch on YouTube</font></a><a href="javascript:AudioLift()"><font color="#00ffff" style="float: right;">Close Mixlr</font></a>'
+	var pSpot = document.getElementById("PodSpot")
+	pSpot.innerHTML = hStr
+}
+function AudioLift() {
+	var hStr = '<img id="pcast" src="http://www.gematrinator.com/images/PodcastIconGray.jpg"> 8 pm EST / Midnight UTC - <a href="javascript:AudioDrop()"><font color="#00ffff">Gematrinator Podcast</font></a> - 04-Oct-18'
+	var pSpot = document.getElementById("PodSpot")
+	pSpot.innerHTML = hStr
+}
+function Open_Content(impLink) {
+	window.open(impLink)
+}
+
+function Header_Load() {
+	Get_Links()
+	//CheckEvery5()
+}
+
+function CheckEvery5() {
+    Get_Links()
+	setTimeout(CheckEvery5(), 300000);
+}
+
+function Get_Links() {
+	var cVal
+
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+	  		cVal = xhttp.responseText;
+	  		impArr = cVal.split("|&|");
+	  		Populate_Recent();
+		}
+	};
+	xhttp.open("GET", "https://www.gematrinator.com/content/getlinks2.php", true);
+	xhttp.send();
+}
+
+function Populate_Recent() {
+	var x = 0
+	var z = 0
+
+    if (arrC1.length > 1) {return}
+	for (x = 0; x < impArr.length; x++) {
+		switch (z) {
+			case 0:
+				z++
+				arrC1.push(impArr[x])
+				break;
+			case 1:
+				z++
+				arrC2.push(impArr[x])
+				break;
+			case 2:
+				z = 0
+				arrC3.push(impArr[x])
+				break;
+		}
+	}
+
+	var RSpot = document.getElementById("RecentLinks")
+	var y, yStr, yCat
+
+	yStr = ""
+	for (y = 0; y < arrC1.length; y++) {
+		if (arrC3[y] == "Blog Post") {yCat = "Blog"} else {yCat = arrC3[y]}
+		yStr += '<div class="' + yCat + '"><a href="javascript:Open_Content(' + "'" + arrC1[y] + "'" + ')">' + arrC2[y] + '</a></div>'
+	}
+
+	RSpot.innerHTML = yStr
+}
+Header_Load()
+</script>
+
+</head><body><center>
+
+
+	<!--<tr><td style="size: 85%; color: white; text-align: center; vertical-align: middle; font-family: Bookman Old Style, Arial"><div id="PodSpot">
+
+		<img id="pcast" src="http://www.gematrinator.com/images/PodcastIconGray.jpg"> 04-Oct Podcast - <a href="javascript:Open_Content('http://mixlr.com/gematrinator/showreel/gematrinator-podcast-27-04-oct-2018/')"><font color="#00ffff" style="font-size: 85%">Audio Stream</font></a> &nbsp - &nbsp <a href="http://www.gematrinator.com/podcasts/04-Oct-2018.mp3" download><font style="font-size: 85%" color="#00ffff">Download Audio</font></a> &nbsp - &nbsp <a href="javascript:Open_Content('https://www.youtube.com/watch?v=ithYkLxL8P4')"><font style="font-size: 85%" color="#00ffff">Video Stream</font></a>
+
+	</div></td></tr>-->
+
+	<!--<tr><td style="size: 85%; color: white; text-align: center; vertical-align: middle; font-family: Bookman Old Style, Arial"><div id="PodSpot">
+
+		<img id="pcast" src="http://www.gematrinator.com/images/PodcastIconGray.jpg"> 8 pm EST / Midnight UTC - <a href="javascript:AudioDrop()"><font color="#00ffff">Gematrinator Podcast</font></a> - 04-Oct-18
+
+	</div></td></tr>-->
+
+</tbody></table>
+</center>	<br>
+
+
+
+
+	<center>
+	<div class="GemBox_Header">Drop text into box below.<br>Highlight portions of the text to reveal its gematria.<br></div>
+
+	<div valign="bottom" id="Calc_Text" class="High_Text" onmousemove="populate_Sums()"><font style="font-size: 150%" color="orange">Highlighted text will go here</font></div>
+
+	<div onmousemove="populate_Sums()">
+	<table class="MainTable">
+		<tbody><tr>
+			<td><textarea id="Gem_Box" rows="25" ,="" cols="60" placeholder="Drop text here" onkeyup="javascript:populate_Sums()" onmouseup="javascript:populate_Sums()"></textarea></td>
+
+			<td id="Gem_Table" valign="top" align="center"><table class="GemTable"><tbody><tr></tr><tr><td class="Reduced td_name" id="Reduced_Header"><a href="javascript:populate_Breakdown('Reduced');">Reduced</a></td></tr><tr><td class="Reduced td_number" id="Reduced_Sum"><a href="javascript:Open_Props(0);">0</a></td></tr><tr><td class="Ordinal td_name" id="Ordinal_Header"><a href="javascript:populate_Breakdown('Ordinal');">Ordinal</a></td></tr><tr><td class="Ordinal td_number" id="Ordinal_Sum"><a href="javascript:Open_Props(0);">0</a></td></tr><tr><td class="Jewish td_name" id="Jewish_Header"><a href="javascript:populate_Breakdown('Jewish');">Jewish</a></td></tr><tr><td class="Jewish td_number" id="Jewish_Sum"><a href="javascript:Open_Props(0);">0</a></td></tr></tbody></table></td>
+
+		</tr>
+		<tr>
+			<td colspan="2" id="Gem_Breakdown" class="GemBreak" style="font-size: 125%; padding: 20px; max-width: 700px" align="center"></td>
+		</tr>
+		<tr>
+			<td colspan="2" id="Break_Options"><table><tbody><tr><td class="CipherLabel" valign="top">Options:</td><td><input type="checkbox" id="Break_Box" onclick="populate_Breakdown()" value="Letter Breakdown" checked="checked">Show Equation<br><input type="checkbox" id="Letter_Box" onclick="populate_Breakdown()" value="Show Letters">Show Letters<br><input type="checkbox" id="Show_Quotes" onclick="populate_Breakdown()" value="Show Quotes">Show Quotes</td></tr></tbody></table></td>
+		</tr>
+		<tr>
+			<td colspan="2" id="Gem_Ciphers"><table class="CheckTable"><tbody><tr><td class="CipherLabel">Ciphers:<u></u></td><td class="CheckHead" style="width: 200px">Pythagorean</td><td class="CheckHead" style="width: 200px">Alphabetic</td><td class="CheckHead" style="width: 200px">Others</td></tr><tr><td></td><td class="CheckBoxes" valign="top"><input type="checkbox" onclick="set_Ciphers()" id="Reduced_Box" value="Reduced" checked="checked"><font style="color: RGB(68, 114, 196)">Reduced<br><input type="checkbox" onclick="set_Ciphers()" id="S_Exception_Box" value="S Exception"><font style="color: RGB(142, 169, 219)">S Exception<br><input type="checkbox" onclick="set_Ciphers()" id="KV_Exception_Box" value="K/V Exception"><font style="color: RGB(142, 169, 219)">K/V Exception<br><input type="checkbox" onclick="set_Ciphers()" id="KSV_Exception_Box" value="K/S/V Exception"><font style="color: RGB(0, 176, 240)">K/S/V Exception<br></font></font></font></font></td><td class="CheckBoxes" valign="top"><input type="checkbox" onclick="set_Ciphers()" id="Ordinal_Box" value="Ordinal" checked="checked"><font style="color: RGB(0, 153, 0)">Ordinal<br><input type="checkbox" onclick="set_Ciphers()" id="Sumerian_Box" value="Sumerian"><font style="color: RGB(169, 208, 142)">Sumerian<br><input type="checkbox" onclick="set_Ciphers()" id="Francis_Bacon_Box" value="Francis Bacon"><font style="color: RGB(146, 208, 80)">Francis Bacon<br><input type="checkbox" onclick="set_Ciphers()" id="Reverse_Ordinal_Box" value="Reverse Ordinal"><font style="color: RGB(198, 89, 17)">Reverse Ordinal<br><input type="checkbox" onclick="set_Ciphers()" id="Alphanumeric_Box" value="Alphanumeric"><font style="color: RGB(255, 0, 0)">Alphanumeric<br></font></font></font></font></font></td><td class="CheckBoxes" valign="top"><input type="checkbox" onclick="set_Ciphers()" id="Jewish_Box" value="Jewish" checked="checked"><font style="color: RGB(153, 102, 255)">Jewish<br><input type="checkbox" onclick="set_Ciphers()" id="English_Box" value="English"><font style="color: RGB(255, 255, 0)">English<br><input type="checkbox" onclick="set_Ciphers()" id="Septenary_Box" value="Septenary"><font style="color: RGB(255, 153, 0)">Septenary<br></font></font></font></td></tr></tbody></table></td>
+		</tr>
+	</tbody></table>
+	</div>
+
+	</center>
+
+	<p>&nbsp;</p>
+
+<center>
+	<p></p>
+
+	<div id="PageFooter" style="background-color: RGB(34, 34, 34);">
+		<style>
+body {background-color: RGB(34, 34, 34);}
+.FooterCell {
+	color: RGB(225, 225, 225);
+	background: #4b6cb7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, RGB(11, 11, 11), #494949);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, RGB(11, 11, 11), #494949); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  	padding: 15px 0px;
+}
+.footer-content {
+	display: inline;
+	padding: 8px 25px 8px 4px;
+}
+.footer-content a:link {color: RGB(140, 250, 243)}
+.footer-content a:visited {color: RGB(140, 250, 243)}
+.footer-content a:hover {color: RGB(255, 255, 255)}
+.footer-content a:active {color: RGB(255, 255, 0)}
+
+.SpaceTaker {display: inline; padding-left: 73px; padding-right: 90px;}
+</style>
+
+<br> 
+<center>
+
+
+
+
+<script>
+	Header_Load()
+	create_Ciphers()
+	populate_CheckTable()
+	populate_Options()
+	populate_GemTable()
+	populate_Sums()
+	document.addEventListener("onmousemove", populate_Sums())
+</script>
+
+</font></body></html>
