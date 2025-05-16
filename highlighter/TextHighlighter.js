@@ -13,6 +13,7 @@ class cipher {
 		this.Nickname = cName
 
 		switch (this.Nickname) {
+			case "English":
 			case "Ordinal":
 			case "Reduced":
 			case "Alphanumeric":
@@ -76,7 +77,7 @@ class cipher {
 				for (x = 0; x < this.valArr.length; x++) {
 					this.valArr[x] += 9
 				};
-				this.rgbArr = [191, 195, 127];
+				this.rgbArr = [190, 190, 126];
 				break;
 			case "Reverse Ordinal":
 				this.valArr.sort(function(a, b){return b-a});
@@ -612,7 +613,7 @@ function populate_Breakdown(impCipher = lastCipher) {
 
 function Open_Props(impNum) {
 	if (impNum > 0 && impNum < 10000000) {
-		window.open("https://gematrinator.com/number-properties?number=" + impNum, "Properties of " + impNum, "height=480,width=750")
+		window.open("http://www.gematrinator.com/calculator/numberProperties.php?Number=" + impNum, "Properties of " + impNum, "height=480,width=750")
 	}
 }
 

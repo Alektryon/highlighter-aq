@@ -137,7 +137,7 @@ table .CheckHead {
 }
 
 .Alphanumeric{
-	color: RGB(191, 195, 127);
+	color: RGB(190, 190, 126);
 }
 .Alphanumeric:hover{
 	color: RGB(216, 216, 171);
